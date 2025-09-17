@@ -1,91 +1,122 @@
-What is Java:   
-   Java is Object Oriented Programming Language.
-   Java released in year 1995(James Gosling)
-   Write Once, Run anywhere. 
+==============================
+         JAVA NOTES
+==============================
 
-   Java is a High level Language.
-      - It abstracts the hardware details  
-      - Easy to understand
-      - Easy to write
-      - Human Understandable. 
-      - It requires Compiler to convert code into Machine code. 
+1. What is Java?
+-----------------
+- Java is an Object-Oriented Programming Language.
+- Released in 1995 by James Gosling.
+- Famous for the principle "Write Once, Run Anywhere (WORA)".
 
-  Low Level Language:
-     - Machine level Language
-  Advantage - It is faster compared to HLL.
-     - More Efficient    
-   Disdavntages-
-       Difficult to read the Code
-       More Understanding about the Hardware.
+High-Level Language:
+  - Abstracts hardware details
+  - Easy to understand & write
+  - Human readable
+  - Requires compiler to convert code into machine code
 
-Features Of Java-
-  Platform independent - Write Once, Run anywhere.
-     Once you compile the java program, you will get a .class file. You take this .class file to any of the operating systems 
-that has JDK installed, then if we give the .class file to it, it executes the code.
-  Object oriented - Everything in java is treated as object oriented.
-  Secure - Dont have direct memory access.
-  xyz - 12
-  x1yxz - 14
-  x2yxz - 20
 
-  add result = xyz + x1yxz
-
-  
-  x2yxz = 20
+2. Low-Level Language (LLL)
 ----------------------------
-Bank
-Manager - update the intrest rates 6 - 10, he can update gold reserve count 1ton, 5tons.
-Employee - He cant update intrest rate, he cant update gold reserve
- 
-  Robust - Strong Memory Management, Exception Handling, Type Checking(Which data type holds what type of data, all the rules have been formulated for this.).
+- Machine-level language.
 
-  Simple - Java is easier to learn and also it has syntax similar to c and C++, In Java we use English keywords to write the code, making it easier for developers to develop the code.
-  Multithreaded - 
-     Task - A task is a set/Group of instructions that performs a particular functionality.
-     Thread - A execution Platform for the task.
-  Task1, Task2, Task3 .... Task10. 
-  Without Multithreading - 1min - 10 tasks - 10mins.
-  With Multithreading - all the 10 tasks will get executed in 1min.  
-  Before Java21, the threads used to run in Cores, each core can execute a thread. we have different cores available in machines 
-ex: Dual Core, Quad Core, Octa Core.
-  After Java 21 there is a concept of Virtual Threads. these will run on JVM instead running in core.
+Advantages:
+  - Faster compared to HLL
+  - More efficient
 
-  High Performance - Uses JIT(Just in time) compiler for fast executions, in the below ex. the 3 instructions in the loop, it will get repeated, so JIT will create a hotspot and prints the result directly instead of executing the same instructions again.
-  
-  loop for 10 times
-    a = 10
-    b = 5
-    print a + b;	
-  end loop
+Disadvantages:
+  - Difficult to read/write code
+  - Requires detailed hardware knowledge
 
-  Portable - Portabilty means write code in one machine and execute that in any machine(i.e any windows m/c, a Linux M/c, or a Mac m/c ). The criteria here is the machine that executes should have JVM.
-  Distributed - Java Supports Networking(java.net) (Ex. Chat Application) and RMI(Remote Method Invocation)
- RMI - You have a program running in machine A and it wants to communicate with a method available in other machine, is possible with RMI.(EJB(Enterprise ), it was deprecated.)
-    
- 
-Installation Steps:
-https://www.oracle.com/java/technologies/downloads/?utm_source=chatgpt.com#jdk24-windows - Down the s/w - Either zip or exe.
-Setup Path in environment variables.
-Verify the installation by opening CMD prompt and type the command Javac or java --version. this should give the proper result.(you should nort see result something like unknown or unrecognized command.)
 
-Simple Hello World Program-
------------------------------
-1. 
-  public class HelloWorld {
-     public static void main(String args[]){
-        System.out.println("Hello World"); 
+3. Features of Java
+--------------------
+
+a) Platform Independent
+   - Once compiled, Java generates a .class file.
+   - The .class file can run on any OS with JDK/JVM installed.
+
+b) Object-Oriented
+   - Everything in Java is treated as an object.
+
+c) Secure
+   - No direct memory access
+   - Provides runtime checking & security features
+
+d) Robust
+   - Strong memory management
+   - Exception handling
+   - Type checking (rules for using correct data types)
+
+e) Simple
+   - Easier to learn
+   - Syntax similar to C/C++
+   - Uses English keywords for readability
+
+f) Multithreaded
+   - Task: A group of instructions for a specific functionality
+   - Thread: Execution platform for a task
+   - Without Multithreading: 10 tasks = 10 mins
+   - With Multithreading: 10 tasks run in 1 min (parallel execution)
+
+   Before Java 21: Threads tied to CPU cores (Dual, Quad, Octa core)
+   After Java 21: Virtual Threads introduced (managed by JVM)
+
+g) High Performance
+   - Uses JIT (Just-In-Time) compiler
+   - JIT identifies repeated code (hotspots) and optimizes execution
+
+   Example:
+     Loop 10 times:
+       a = 10
+       b = 5
+       print a + b
+     End Loop
+   (JIT optimizes instead of repeating addition each time)
+
+h) Portable
+   - Write code on one machine and run it on any machine (Windows/Linux/Mac)
+   - Requirement: JVM must be installed
+
+i) Distributed
+   - Supports networking (java.net)
+   - Supports RMI (Remote Method Invocation)
+   - Allows a program on one machine to call methods on another
+   - Example: EJB (Enterprise Java Beans - now deprecated)
+
+
+4. Example Scenario (Bank System - OOP)
+----------------------------------------
+- Manager:
+   Can update interest rates (6% -> 10%)
+   Can update gold reserves (1 ton -> 5 tons)
+- Employee:
+   Cannot update interest rates or gold reserves
+
+
+5. Installation Steps
+----------------------
+1. Download JDK:
+   https://www.oracle.com/java/technologies/downloads/?utm_source=chatgpt.com#jdk24-windows
+   Options: ZIP archive or EXE installer
+
+2. Setup PATH in environment variables
+
+3. Verify installation in CMD:
+   java --version
+   javac
+   (Should not show "unknown command")
+
+
+6. Simple Hello World Program
+------------------------------
+public class HelloWorld {
+    public static void main(String args[]) {
+        System.out.println("Hello World");
     }
-  }
+}
 
-public class HelloWorld
-  public - The class can be accessed from anywhere.
-  class  - All the functionality and data will be wrapped inside a class(in short Everything you write in java should be placed inside a class.)
-  HelloWorld - This is name of the class(the class name should match with name of your file.)
-  
-public static void main(String args[])
-
-
-
-
-
-
+Explanation:
+- public    : Accessible from anywhere
+- class     : Code is always wrapped inside a class
+- HelloWorld: Class name (must match file name)
+- main()    : Entry point of the program

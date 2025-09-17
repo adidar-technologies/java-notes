@@ -1,0 +1,91 @@
+What is Java:   
+   Java is Object Oriented Programming Language.
+   Java released in year 1995(James Gosling)
+   Write Once, Run anywhere. 
+
+   Java is a High level Language.
+      - It abstracts the hardware details  
+      - Easy to understand
+      - Easy to write
+      - Human Understandable. 
+      - It requires Compiler to convert code into Machine code. 
+
+  Low Level Language:
+     - Machine level Language
+  Advantage - It is faster compared to HLL.
+     - More Efficient    
+   Disdavntages-
+       Difficult to read the Code
+       More Understanding about the Hardware.
+
+Features Of Java-
+  Platform independent - Write Once, Run anywhere.
+     Once you compile the java program, you will get a .class file. You take this .class file to any of the operating systems 
+that has JDK installed, then if we give the .class file to it, it executes the code.
+  Object oriented - Everything in java is treated as object oriented.
+  Secure - Dont have direct memory access.
+  xyz - 12
+  x1yxz - 14
+  x2yxz - 20
+
+  add result = xyz + x1yxz
+
+  
+  x2yxz = 20
+----------------------------
+Bank
+Manager - update the intrest rates 6 - 10, he can update gold reserve count 1ton, 5tons.
+Employee - He cant update intrest rate, he cant update gold reserve
+ 
+  Robust - Strong Memory Management, Exception Handling, Type Checking(Which data type holds what type of data, all the rules have been formulated for this.).
+
+  Simple - Java is easier to learn and also it has syntax similar to c and C++, In Java we use English keywords to write the code, making it easier for developers to develop the code.
+  Multithreaded - 
+     Task - A task is a set/Group of instructions that performs a particular functionality.
+     Thread - A execution Platform for the task.
+  Task1, Task2, Task3 .... Task10. 
+  Without Multithreading - 1min - 10 tasks - 10mins.
+  With Multithreading - all the 10 tasks will get executed in 1min.  
+  Before Java21, the threads used to run in Cores, each core can execute a thread. we have different cores available in machines 
+ex: Dual Core, Quad Core, Octa Core.
+  After Java 21 there is a concept of Virtual Threads. these will run on JVM instead running in core.
+
+  High Performance - Uses JIT(Just in time) compiler for fast executions, in the below ex. the 3 instructions in the loop, it will get repeated, so JIT will create a hotspot and prints the result directly instead of executing the same instructions again.
+  
+  loop for 10 times
+    a = 10
+    b = 5
+    print a + b;	
+  end loop
+
+  Portable - Portabilty means write code in one machine and execute that in any machine(i.e any windows m/c, a Linux M/c, or a Mac m/c ). The criteria here is the machine that executes should have JVM.
+  Distributed - Java Supports Networking(java.net) (Ex. Chat Application) and RMI(Remote Method Invocation)
+ RMI - You have a program running in machine A and it wants to communicate with a method available in other machine, is possible with RMI.(EJB(Enterprise ), it was deprecated.)
+    
+ 
+Installation Steps:
+https://www.oracle.com/java/technologies/downloads/?utm_source=chatgpt.com#jdk24-windows - Down the s/w - Either zip or exe.
+Setup Path in environment variables.
+Verify the installation by opening CMD prompt and type the command Javac or java --version. this should give the proper result.(you should nort see result something like unknown or unrecognized command.)
+
+Simple Hello World Program-
+-----------------------------
+1. 
+  public class HelloWorld {
+     public static void main(String args[]){
+        System.out.println("Hello World"); 
+    }
+  }
+
+public class HelloWorld
+  public - The class can be accessed from anywhere.
+  class  - All the functionality and data will be wrapped inside a class(in short Everything you write in java should be placed inside a class.)
+  HelloWorld - This is name of the class(the class name should match with name of your file.)
+  
+public static void main(String args[])
+
+
+
+
+
+

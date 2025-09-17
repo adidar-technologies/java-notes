@@ -1,0 +1,48 @@
+What is Java:   
+   Java is Object Oriented Programming Language.
+   Java released in year 1995(James Gosling)
+   Write Once, Run anywhere. 
+
+   Java is a High level Language.
+      - It abstracts the hardware details  
+      - Easy to understand
+      - Easy to write
+      - Human Understandable. 
+      - It requires Compiler to convert code into Machine code. 
+
+  Low Level Language:
+     - Machine level Language
+  Advantage - It is faster compared to HLL.
+     - More Efficient    
+   Disdavntages-
+       Difficult to read the Code
+       More Understanding about the Hardware.
+
+Features Of Java-
+  Platform independent - Write Once, Run anywhere.
+     Once you compile the java program, you will get a .class file. You take this .class file to any of the operating systems 
+that has JDK installed, then if we give the .class file to it, it executes the code.
+  Object oriented - Everything in java is treated as object oriented.
+  Secure - Dont have direct memory access.
+  xyz - 12
+  x1yxz - 14
+  x2yxz - 20
+
+  add result = xyz + x1yxz
+
+  
+  x2yxz = 20
+----------------------------
+Bank
+Manager - update the intrest rates 6 - 10, he can update gold reserve count 1ton, 5tons.
+Employee - He cant update intrest rate, he cant update gold reserve
+ 
+  Robust - Strong Memory Management, Exception Handling, Type Checking(Which data type holds what type of data, all the rules have been formulated for this.).
+
+  Simple - 
+  Multithreaded - 
+  High Performance -
+  Portable - 
+  Distributed -  
+    
+ 

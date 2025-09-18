@@ -116,7 +116,59 @@ public class HelloWorld {
 }
 
 Explanation:
+public class HelloWorld
 - public    : Accessible from anywhere
 - class     : Code is always wrapped inside a class
 - HelloWorld: Class name (must match file name)
-- main()    : Entry point of the program
+
+public static void main(String args[])
+  public - this method is accessible from anywhere. 
+  static - When we want to access a method we dont need to create object, we can access it directly using Classname. 
+  void - This is return type, Void means this method returns nothing.
+  main - This name of the method.
+  String - Its a data type.
+  args[] - its a variable of type string array. 
+
+System.out.println
+  System - This is a class, this is built in class, which is present java libraries.
+  out  - it is static object, representing the standard output(Usally console).
+  println - This is the method that actually prints the message.
+
+
+Flow of program.
+----------------------------
+1. The programmer writes source code and keep it in .java file.
+The code is written in high level language.
+
+2. Compile the program
+------------------------------
+To compile the code we use javac filename.java
+The Compiler will transulates .java file into .class file.
+The code that is present inside the .class is bytecode.
+
+3. ByteCode(.class)
+--------------------
+These are intermediatory instructions.
+It cannot run directly on hardware. It needs the JVM.
+
+4.JVM(Java Virtual Machine)
+----------------------------
+By using "java ClassName" you give bytecode to your JVM.
+The JVM s responsible for executing the bytecode using the OS and System resources.
+
+Inside JVM we have few subcomponents.
+   Class Loader - Loads .class file into JVM (memory).
+   ByteCode Verifier - checks for security, illegal code and memory voilations.
+   Interpreter - It reads the byte code line by line and executes them.
+   JitCompiler - 
+     It detects the frequently executed Code and creates Hotspots
+     The performance increases significantly. 
+
+ 
+
+
+
+
+
+
+

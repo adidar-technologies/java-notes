@@ -1,0 +1,92 @@
+1) Who is the creator of Java and in which year was it released?
+   a) Dennis Ritchie, 1972
+   b) James Gosling, 1995 
+   c) Bjarne Stroustrup, 1983
+   d) Guido van Rossum, 1991
+
+Ans B
+
+2) Java follows the principle of:
+   a) Compile Once, Compile Anywhere
+   b) Run Once, Run Anywhere
+   c) Write Once, Run Anywhere
+   d) Code Once, Execute Anywhere
+
+Ans C
+
+3) Which of the following is NOT a feature of Java?
+   a) Platform Independent
+   b) Direct Memory Access
+   c) Robust
+   d) Multithreaded
+
+Ans B
+
+4) Low-Level Languages are easier to read and understand compared to High-Level Languages.
+a) True
+b) False
+
+Ans B
+
+5) What is the role of the JIT compiler in Java?
+a) Compiles Java source code into bytecode
+b) Optimizes performance by compiling hotspots into native code
+c) Loads .class files into memory
+d) Executes bytecode line by line
+
+Ans B.
+
+6) In Java, what does "Portable" mean?
+a) Java code can only run on Windows
+b) Java code must be rewritten for each OS
+c) Write code once and run it on any machine with a JVM
+d) Java can only run on Linux and Mac
+
+Ans C
+
+7) Which Java feature allows a program on one machine to invoke methods on another machine?
+a) Multithreading  
+b) RMI (Remote Method Invocation)  
+c) JIT Compiler  
+d) Virtual Threads  
+
+Ans B
+
+8) Before Java 21, threads used to run on __________. After Java 21, Java introduced __________ threads.
+a) Processors, Parallel Threads  
+b) Cores, Virtual Threads  
+c) JVM, Native Threads  
+d) OS, Green Threads  
+
+Ans B
+
+9) In Java, a program must always be written inside a __________. The execution starts from the __________ method.
+a) Method, class  
+b) Class, main  
+c) File, constructor  
+d) Object, run
+
+Ans B
+
+10) Write the output of the following program:
+
+public class HelloWorld {
+    public static void main(String args[]) {
+        System.out.println("Hello Test 1234");
+    }
+}
+O/P - Hello Test 1234
+
+11. public class HelloWorld {
+    public static void main(String args) {
+        System.out.println("Hello Test");
+    }
+}
+o/p - Compilation error
+
+
+
+
+
+
+

@@ -165,10 +165,55 @@ Inside JVM we have few subcomponents.
      The performance increases significantly. 
 
  
+Class & Object - 
+----------------
+Class - 
+   A class is a blueprint/template used to create objects.
+  
+   A class defines
+         - Fields(variables/attributes)  - It represents the state of object
+         - Methods(functions) - It represents the behaviour of objects. 
+
+ class Car{
+        
+     String brand;
+     String model;
+     String price;
+   
+     public void drive(){
+        System.out.println("start the engine");
+	System.out.println("put a gear");
+        System.out.println("start driving");        
+    }
+  }
+   
+ Object:
+   An Object is instance of a class. 
+   It occupies memomry and hold actual data.
+
+Steps to create Object.
+  Car car1 = new Car();
+
+  Car - Class type.
+  car1 - Reference to your object that is stored in the memory.
+  new Car() - Actual object creation will be done here.
+  While creating the object the variables are assigned with default values and then loaded into memory.
+
+ Accessing class variable:
+    car1.brand
+    reference dot variable name
+    Assigning values to your variables.
+    car1.brand = "audi";
+ 
+Accessing method
+   
+    car1.drive();
+
+ reference dot functionName()
 
 
 
 
-
+   
 
 
